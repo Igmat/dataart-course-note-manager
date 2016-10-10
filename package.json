@@ -1,0 +1,112 @@
+{
+  "name": "dataart-course-note-manager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js",
+    "doc": "doctoc ."
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "redux":"^3.6.0",
+    "react-router": "^2.8.1"
+  },
+  "devDependencies": {
+    "x----x----x": "General project dependencies for correct compilation",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest",
+    "tslint": "latest",
+    "babel-core": "latest",
+    "babel-preset-react-app": "latest",
+    "babel-preset-stage-0": "latest",
+    "babel-plugin-transform-runtime": "latest",
+
+    "x----x----x": "General project dependencies for correct testing",
+    "jest": "latest",
+    "@types/jest": "latest",
+    "ts-jest": "latest",
+    "babel-jest": "latest",
+
+    "x----x----x": "Polyfils",
+    "object-assign": "latest",
+    "whatwg-fetch": "latest",
+
+    "x----x----x": "General webpack dependencies",
+    "webpack": "latest",
+    "webpack-dev-server": "latest",
+    "http-proxy-middleware": "latest",
+    "connect-history-api-fallback": "latest",
+    "case-sensitive-paths-webpack-plugin": "latest",
+    "dotenv": "latest",
+    "detect-port": "latest",
+
+    "x----x----x": "webpack dependencies for react",
+    "react-dev-utils": "latest",
+    "react-hot-loader": "latest",
+
+    "x----x----x": "webpack dependencies for JS compilation",
+    "tslint-loader": "latest",
+    "ts-loader": "latest",
+    "babel-loader": "latest",
+
+    "x----x----x": "webpack dependencies for static files",
+    "html-webpack-plugin": "latest",
+    "extract-text-webpack-plugin": "latest",
+    "file-loader": "latest",
+    "url-loader": "latest",
+    "json-loader": "latest",
+
+    "x----x----x": "webpack dependencies for CSS compilation",
+    "autoprefixer": "latest",
+    "postcss-loader": "latest",
+    "less": "latest",
+    "less-loader": "latest",
+    "css-loader": "latest",
+    "style-loader": "latest",
+
+    "x----x----x": "console helpers",
+    "chalk": "latest",
+    "strip-ansi": "latest",
+    "filesize": "latest",
+    "gzip-size": "latest",
+
+    "x----x----x": "filesystem helpers",
+    "fs-extra": "latest",
+    "path-exists": "latest",
+    "rimraf": "latest",
+    "recursive-readdir": "latest",
+    "find-cache-dir": "latest",
+    "cross-spawn": "latest",
+
+    "x----x----x": "documentation helpers",
+    "doctoc": "latest",
+    "x----x----x": "*"
+  },
+  "proxy": "http://localhost:3000",
+  "jest": {
+    "testEnvironment": "jsdom", 
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js|jsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ],
+    "scriptPreprocessor": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+    "moduleNameMapper": {
+      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>\\config\\jest\\FileStub.js",
+      "^.+\\.(css|less)$": "<rootDir>\\config\\jest\\CSSStub.js"
+    },
+    "setupFiles": [
+      "<rootDir>\\config\\polyfills.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/(build|docs|node_modules)/"
+    ]
+  }
+}
