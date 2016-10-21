@@ -14,11 +14,11 @@
     "jsx": "react",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": false
+    "allowSyntheticDefaultImports": false,
+    "preserveConstEnums": false
   },
   "include": [
     "src/**/*.ts",
-    "src/**/*.tsx",
-    "require.d.ts"
+    "src/**/*.tsx"
   ]
 }

@@ -12,12 +12,23 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "redux":"^3.6.0",
-    "react-router": "^2.8.1"
+    "react-router": "^2.8.1",
+    "react-redux": "^4.4.5",
+    "redux-thunk": "^2.1.0",
+    "redux-logger": "^2.7.0",
+    "history": "^4.3.0",
+    "whatwg-fetch": "latest"
   },
   "devDependencies": {
     "x----x----x": "General project dependencies for correct compilation",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/react-redux": "latest",
+    "@types/react-router": "latest",    
+    "@types/webpack-env": "latest",
+    "@types/redux-logger": "latest",
+    "@types/redux-thunk": "latest",
+    "@types/history": "latest",
     "typescript": "latest",
     "tslint": "latest",
     "babel-core": "latest",
@@ -33,7 +44,7 @@
 
     "x----x----x": "Polyfils",
     "object-assign": "latest",
-    "whatwg-fetch": "latest",
+    "@types/whatwg-fetch": "latest",
 
     "x----x----x": "General webpack dependencies",
     "webpack": "latest",
